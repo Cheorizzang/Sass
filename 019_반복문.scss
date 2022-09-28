@@ -1,0 +1,20 @@
+// for ($변수) from (시작) through(끝){
+//  반복할 내용
+// }
+
+// #{$변수명}
+
+@for $hojun from 1 through 7 {
+    .photo-box:nth-child(#{$hojun}) {
+        background-image: url("../assets/phoster#{$hojun}.png");
+    }
+}
+
+@for $hojun from 1 through 10 {
+    .content-#{$hojun} {
+        font-size: #{$hojun * 10}px;
+        width: 100px;
+        height: 100px;
+        background-color: red;
+    }
+}
